@@ -1,0 +1,328 @@
+body {
+ 
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        text-align: left;
+        background-color: #fff;
+  }
+
+.navbar
+{
+    
+    height: 90px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 0;
+    min-height: 80px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #fff;
+}
+
+.logo
+{
+    height: 70px;
+    margin-left: 203px;
+    margin-top: 16px;
+}
+
+.navoptions
+{
+    display: flex;
+    column-gap: 15px;
+    position: relative;
+    top: -62px;
+    right: 52px;
+    left: 0px;
+
+    list-style: none;
+    
+}
+
+.navoptions .nav-link.active
+{
+    color: #ff7a57;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info
+{
+    margin-left: 213px;
+    position: relative;
+    top: 150px;
+    height: 400px;
+}
+
+.hd
+{
+    border-radius: 30px!important;
+    width: 83px;
+    height: 41px;
+    background-color: #ff7a57;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+    overflow: visible;
+    font-size: 17px;
+    border-color: #ff7a57;
+}
+
+.hv
+{
+    border-radius: 30px;
+    height: 41px;
+    width: 8pc;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #343a40;
+    color: white;
+    font-size: 17px;
+    border-color: #ff7a57;
+    overflow: visible;
+
+}
+
+.socials-mt-4
+{
+    display: flex;
+    column-gap: 14px;
+    position: relative;
+    top: -347px;
+    margin-left: 15px;
+    
+    
+
+}
+
+.social-item
+{
+    color: #ff7a57;
+    text-decoration: none;
+    border: solid;
+    border-radius: 26px;
+    width: 33px;
+    height: 34px;
+
+}
+
+.header .widget
+{
+    position: relative;
+    max-width: 650px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border: 1px solid #dee2e6;
+    padding: 20px 0;
+    margin-top: -50px;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 0 30px rgb(173 181 189 / 40%);
+
+}
+
+.navbar.affix {
+    box-shadow: 0 6px 15px rgb(206 212 218 / 30%);
+}
+
+.header .widget .widget-item {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    text-align: center;
+    border-right: 1px solid #dee2e6;
+}
+
+.header
+{
+    border-bottom: 1px solid #dee2e6;
+    height: 35pc;
+}
+
+.header .widget .widget-item h2, .header .widget .widget-item p {
+    margin: 0;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+}
+
+.widget{
+    bottom: -151px;
+}
+
+.img-holder
+{
+    position: relative;
+    top: -325px;
+}
+
+.section {
+    position: relative;
+    padding: 5rem 0;
+}
+
+.title
+{
+    font-size: 46px;
+    margin: 0px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .content h2 {
+    display: block;
+    font-size: 2rem;
+    color: #111;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .content span {
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  
+  @media (max-width: 600px) {
+    .container .box:hover .content {
+      transform: translate(0, 3.5rem);
+    }
+    .container .box:hover .imgBox {
+      transform: translate(0, -3.5rem);
+    }
+  }
+
+  .container .box {
+    position: relative;
+    width: 29rem;
+    height: 18rem;
+    margin: 1rem;
+  }
+  
+  .container .box:hover .imgBox {
+    transform: translate(-3.5rem, -3.5rem);
+  }
+  
+  .container .box:hover .content {
+    transform: translate(3.5rem, 3.5rem);
+  }
+  
+  .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .imgBox img {
+    width: 21rem;
+    height: 18rem;
+    object-fit: cover;
+    resize: both;
+  }
+
+
+  Edit in JSFiddle
+Result
+HTML
+CSS
+Resources
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/* Credit to https://epicbootstrap.com/snippets/footer-basic */
